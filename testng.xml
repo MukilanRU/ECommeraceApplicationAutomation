@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5">
+
+	<listeners>
+		<listener class-name="utils.ListenerClass"></listener>
+	</listeners>
+
+	<parameter name="url" value="https://www.demoblaze.com/"></parameter>
+
+	<test name="ChromeTest">
+
+		<parameter name="browser" value="chrome"></parameter>
+
+		<classes>
+			<class name="tests.TC001_SignUpFunctionTest" />
+			<class name="tests.TC002_LoginFunctionTest" />
+			<class name="tests.TC003_Product_Categories_and_DisplayTest" />
+			<class name="tests.TC004_ProductDetails_and_AddingToCartTest" />
+			<class name="tests.TC005_Cart_FunctionalityTest" />
+			<class name="tests.TC006_Purchase_FunctionTest" />
+			<class name="tests.TC007_Logout_FunctionTest" />
+		</classes>
+
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

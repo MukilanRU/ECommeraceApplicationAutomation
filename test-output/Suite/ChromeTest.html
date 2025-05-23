@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 23 08:49:19 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>71 seconds (71022 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TC004_ProductDetails_and_AddingToCartTest.productAndCartTest()'><b>productAndCartTest</b><br>Test class: tests.TC004_ProductDetails_and_AddingToCartTest<br>Parameters: test@123, test@123, Samsung galaxy s6, $360 *includes tax, The Samsung Galaxy S6 is powered by 1.5GHz octa-core Samsung Exynos 7420 processor and it comes with 3GB of RAM. The phone packs 32GB of internal storage cannot be expanded.<br/>
+<a href="#Output-1200601052" onClick='toggleBox("Output-1200601052", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1200601052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1200601052">
+Redirection to the product details page upon clicking a product is verified<br/>
+The displayed information accuracy successfully<br/>
+The product count increments in the cart after addition is verified<br/>
+Process of completing an order by clicking the purchase button verified<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>tests.TC004_ProductDetails_and_AddingToCartTest@1c1bbc4e</td></tr>
+<tr>
+<td title='tests.TC005_Cart_FunctionalityTest.cartFunctionTest()'><b>cartFunctionTest</b><br>Test class: tests.TC005_Cart_FunctionalityTest<br>Parameters: test@123, test@123<br/>
+<a href="#Output-1527147571" onClick='toggleBox("Output-1527147571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1527147571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1527147571">
+Accurate calculation of the total price after modifications are verified<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>tests.TC005_Cart_FunctionalityTest@55fe41ea</td></tr>
+<tr>
+<td title='tests.TC006_Purchase_FunctionTest.purchaseFunctionTest()'><b>purchaseFunctionTest</b><br>Test class: tests.TC006_Purchase_FunctionTest<br>Parameters: test@123, test@123, Place order, john, india, chennai, 1234567890, june, 2026, Thank you for your purchase!<br/>
+<a href="#Output-810646103" onClick='toggleBox("Output-810646103", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-810646103" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-810646103">
+Process of completing an order by clicking the purchase button verified<br/>
+Redirection to the place order window from the cart page is verified<br/>
+Presence of all user details sections are verified<br/>
+Successful payment processing with valid payment details verified<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>tests.TC006_Purchase_FunctionTest@fbd1f6</td></tr>
+<tr>
+<td title='tests.TC007_Logout_FunctionTest.logoutTest()'><b>logoutTest</b><br>Test class: tests.TC007_Logout_FunctionTest<br>Parameters: test@123, test@123<br/>
+<a href="#Output-993347235" onClick='toggleBox("Output-993347235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-993347235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-993347235">
+visibility of the Log out button in the user dashboard verified<br/>
+Redirection to the home page after clicking Log out button verified<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>tests.TC007_Logout_FunctionTest@1ce24091</td></tr>
+<tr>
+<td title='tests.TC003_Product_Categories_and_DisplayTest.productTest()'><b>productTest</b><br>Test class: tests.TC003_Product_Categories_and_DisplayTest<br>Parameters: test@123, test@123, Welcome test@123<br/>
+<a href="#Output-1933471223" onClick='toggleBox("Output-1933471223", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1933471223" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1933471223">
+“Welcome user” is displayed on the homepage<br/>
+All menu items are displayed on the homepage.<br/>
+All categories are listed on the homepage.<br/>
+Application logo is displayed on the homepage<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>tests.TC003_Product_Categories_and_DisplayTest@ba2f4ec</td></tr>
+<tr>
+<td title='tests.TC002_LoginFunctionTest.loginTest()'><b>loginTest</b><br>Test class: tests.TC002_LoginFunctionTest<br>Parameters: test@123, test@123, Welcome test@123<br/>
+<a href="#Output-2028767654" onClick='toggleBox("Output-2028767654", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2028767654" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2028767654">
+Login Button is Visible on the HomePage<br/>
+Login Button is Clickable<br/>
+redirection to the user dashboard using valid credentials is successful<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.TC002_LoginFunctionTest@49438269</td></tr>
+<tr>
+<td title='tests.TC001_SignUpFunctionTest.SignUpTest()'><b>SignUpTest</b><br>Test class: tests.TC001_SignUpFunctionTest<br>Parameters: test@123, test@123, Sign up<br/>
+<a href="#Output-1526453607" onClick='toggleBox("Output-1526453607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526453607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526453607">
+Signup Button is Visible on the HomePage<br/>
+Signup Button is clickable on the HomePage<br/>
+opening the sign up window after clicking Sign up is Successful<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.TC001_SignUpFunctionTest@4b2bac3f</td></tr>
+</table><p>
+</body>
+</html>

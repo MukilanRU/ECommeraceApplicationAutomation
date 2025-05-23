@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://www.demoblaze.com/"/>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.TC005_Cart_FunctionalityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="browseClose"/>
+          <include name="cartFunctionTest" invocation-numbers="0"/>
+          <include name="closeReport"/>
+          <include name="reportinitialization"/>
+          <include name="launchBrowserAndLoadingUrl"/>
+        </methods>
+      </class> <!-- tests.TC005_Cart_FunctionalityTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

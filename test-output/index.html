@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\mukil\eclipse-workspace\ECommerceApp\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TC001_SignUpFunctionTest" class="method navigator-link" hash-for-method="SignUpTest(test@123, test@123, Sign up)">SignUpTest(test@123, test@123, Sign up)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TC005_Cart_FunctionalityTest" class="method navigator-link" hash-for-method="cartFunctionTest(test@123, test@123)">cartFunctionTest(test@123, test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TC002_LoginFunctionTest" class="method navigator-link" hash-for-method="loginTest(test@123, test@123, Welcome test@123)">loginTest(test@123, test@123, Welcome test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TC007_Logout_FunctionTest" class="method navigator-link" hash-for-method="logoutTest(test@123, test@123)">logoutTest(test@123, test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TC004_ProductDetails_and_AddingToCartTest" class="method navigator-link" hash-for-method="productAndCartTest(test@123, test@123, Samsung galaxy s6, $360 *includes tax, The Samsung Galaxy S6 is powered by 1.5GH...)">productAndCartTest(test@123, test@123, Samsung galaxy s6, $360 *includes tax, The Samsung Galaxy S6 is powered by 1.5GH...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TC003_Product_Categories_and_DisplayTest" class="method navigator-link" hash-for-method="productTest(test@123, test@123, Welcome test@123)">productTest(test@123, test@123, Welcome test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TC006_Purchase_FunctionTest" class="method navigator-link" hash-for-method="purchaseFunctionTest(test@123, test@123, Place order, john, india, chennai, 1234567890, june, 2026, Thank you for your pu...)">purchaseFunctionTest(test@123, test@123, Place order, john, india, chennai, 1234567890, june, 2026, Thank you for your pu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC002_LoginFunctionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(test@123, test@123, Welcome test@123)">
+                  </a> <!-- loginTest(test@123, test@123, Welcome test@123) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(test@123,test@123,Welcome test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC005_Cart_FunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cartFunctionTest(test@123, test@123)">
+                  </a> <!-- cartFunctionTest(test@123, test@123) -->
+                  <span class="method-name">cartFunctionTest</span>
+                  <span class="parameters">(test@123,test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC006_Purchase_FunctionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseFunctionTest(test@123, test@123, Place order, john, india, chennai, 1234567890, june, 2026, Thank you for your pu...)">
+                  </a> <!-- purchaseFunctionTest(test@123, test@123, Place order, john, india, chennai, 1234567890, june, 2026, Thank you for your pu...) -->
+                  <span class="method-name">purchaseFunctionTest</span>
+                  <span class="parameters">(test@123,test@123,Place order,john,india,chennai,1234567890,june,2026,Thank you for your purchase!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC007_Logout_FunctionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutTest(test@123, test@123)">
+                  </a> <!-- logoutTest(test@123, test@123) -->
+                  <span class="method-name">logoutTest</span>
+                  <span class="parameters">(test@123,test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC004_ProductDetails_and_AddingToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productAndCartTest(test@123, test@123, Samsung galaxy s6, $360 *includes tax, The Samsung Galaxy S6 is powered by 1.5GH...)">
+                  </a> <!-- productAndCartTest(test@123, test@123, Samsung galaxy s6, $360 *includes tax, The Samsung Galaxy S6 is powered by 1.5GH...) -->
+                  <span class="method-name">productAndCartTest</span>
+                  <span class="parameters">(test@123,test@123,Samsung galaxy s6,$360 *includes tax,The Samsung Galaxy S6 is powered by 1.5GHz octa-core Samsung Exynos 7420 processor and it comes with 3GB of RAM. The phone packs 32GB of internal storage cannot be expanded.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC001_SignUpFunctionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUpTest(test@123, test@123, Sign up)">
+                  </a> <!-- SignUpTest(test@123, test@123, Sign up) -->
+                  <span class="method-name">SignUpTest</span>
+                  <span class="parameters">(test@123,test@123,Sign up)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC003_Product_Categories_and_DisplayTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTest(test@123, test@123, Welcome test@123)">
+                  </a> <!-- productTest(test@123, test@123, Welcome test@123) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(test@123,test@123,Welcome test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\mukil\eclipse-workspace\ECommerceApp\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://www.demoblaze.com/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.ListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.TC001_SignUpFunctionTest&quot;/&gt;
+      &lt;class name=&quot;tests.TC002_LoginFunctionTest&quot;/&gt;
+      &lt;class name=&quot;tests.TC003_Product_Categories_and_DisplayTest&quot;/&gt;
+      &lt;class name=&quot;tests.TC004_ProductDetails_and_AddingToCartTest&quot;/&gt;
+      &lt;class name=&quot;tests.TC005_Cart_FunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;tests.TC006_Purchase_FunctionTest&quot;/&gt;
+      &lt;class name=&quot;tests.TC007_Logout_FunctionTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'productAndCartTest')
+data.setCell(0, 2, 'tests.TC004_ProductDetails_and_AddingToCartTest')
+data.setCell(0, 3, 14241);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'cartFunctionTest')
+data.setCell(1, 2, 'tests.TC005_Cart_FunctionalityTest')
+data.setCell(1, 3, 9519);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'purchaseFunctionTest')
+data.setCell(2, 2, 'tests.TC006_Purchase_FunctionTest')
+data.setCell(2, 3, 4456);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logoutTest')
+data.setCell(3, 2, 'tests.TC007_Logout_FunctionTest')
+data.setCell(3, 3, 3483);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'productTest')
+data.setCell(4, 2, 'tests.TC003_Product_Categories_and_DisplayTest')
+data.setCell(4, 3, 3011);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SignUpTest')
+data.setCell(5, 2, 'tests.TC001_SignUpFunctionTest')
+data.setCell(5, 3, 2923);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginTest')
+data.setCell(6, 2, 'tests.TC002_LoginFunctionTest')
+data.setCell(6, 3, 2475);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">productAndCartTest(test@123, test@123, Samsung galaxy s6, $360 *includes tax, The Samsung Galaxy S6 is powered by 1.5GH...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Redirection to the product details page upon clicking a product is verified</span>
+                <span class="reporter-method-output">The displayed information accuracy successfully</span>
+                <span class="reporter-method-output">The product count increments in the cart after addition is verified</span>
+                <span class="reporter-method-output">Process of completing an order by clicking the purchase button verified</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">cartFunctionTest(test@123, test@123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Accurate calculation of the total price after modifications are verified</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">purchaseFunctionTest(test@123, test@123, Place order, john, india, chennai, 1234567890, june, 2026, Thank you for your pu...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Process of completing an order by clicking the purchase button verified</span>
+                <span class="reporter-method-output">Redirection to the place order window from the cart page is verified</span>
+                <span class="reporter-method-output">Presence of all user details sections are verified</span>
+                <span class="reporter-method-output">Successful payment processing with valid payment details verified</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">logoutTest(test@123, test@123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">visibility of the Log out button in the user dashboard verified</span>
+                <span class="reporter-method-output">Redirection to the home page after clicking Log out button verified</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">productTest(test@123, test@123, Welcome test@123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">“Welcome user” is displayed on the homepage</span>
+                <span class="reporter-method-output">All menu items are displayed on the homepage.</span>
+                <span class="reporter-method-output">All categories are listed on the homepage.</span>
+                <span class="reporter-method-output">Application logo is displayed on the homepage</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginTest(test@123, test@123, Welcome test@123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login Button is Visible on the HomePage</span>
+                <span class="reporter-method-output">Login Button is Clickable</span>
+                <span class="reporter-method-output">redirection to the user dashboard using valid credentials is successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SignUpTest(test@123, test@123, Sign up)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Signup Button is Visible on the HomePage</span>
+                <span class="reporter-method-output">Signup Button is clickable on the HomePage</span>
+                <span class="reporter-method-output">opening the sign up window after clicking Sign up is Successful</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">12 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TC002_LoginFunctionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportinitialization</span>
+                <br/>
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TC005_Cart_FunctionalityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+                <span class="ignored-method-name">reportinitialization</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TC006_Purchase_FunctionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+                <span class="ignored-method-name">reportinitialization</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TC007_Logout_FunctionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+                <span class="ignored-method-name">reportinitialization</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TC004_ProductDetails_and_AddingToCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportinitialization</span>
+                <br/>
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TC003_Product_Categories_and_DisplayTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportinitialization</span>
+                <br/>
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC001_SignUpFunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">reportinitialization</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC004_ProductDetails_and_AddingToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC001_SignUpFunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC002_LoginFunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC003_Product_Categories_and_DisplayTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC005_Cart_FunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC007_Logout_FunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC006_Purchase_FunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC001_SignUpFunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserAndLoadingUrl(chrome, https://www.demoblaze.com/)</span>
+                <span class="method-start">793 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignUpTest(test@123, test@123, Sign up)</span>
+                <span class="method-start">3066 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browseClose</span>
+                <span class="method-start">5994 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC002_LoginFunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserAndLoadingUrl(chrome, https://www.demoblaze.com/)</span>
+                <span class="method-start">8283 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(test@123, test@123, Welcome test@123)</span>
+                <span class="method-start">10235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browseClose</span>
+                <span class="method-start">12711 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC003_Product_Categories_and_DisplayTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserAndLoadingUrl(chrome, https://www.demoblaze.com/)</span>
+                <span class="method-start">14925 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productTest(test@123, test@123, Welcome test@123)</span>
+                <span class="method-start">16995 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browseClose</span>
+                <span class="method-start">20007 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC004_ProductDetails_and_AddingToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserAndLoadingUrl(chrome, https://www.demoblaze.com/)</span>
+                <span class="method-start">22167 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productAndCartTest(test@123, test@123, Samsung galaxy s6, $360 *includes tax, The Samsung Galaxy S6 is powered by 1.5GH...)</span>
+                <span class="method-start">24170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browseClose</span>
+                <span class="method-start">38412 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC005_Cart_FunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserAndLoadingUrl(chrome, https://www.demoblaze.com/)</span>
+                <span class="method-start">40752 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cartFunctionTest(test@123, test@123)</span>
+                <span class="method-start">42839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browseClose</span>
+                <span class="method-start">52358 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC006_Purchase_FunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserAndLoadingUrl(chrome, https://www.demoblaze.com/)</span>
+                <span class="method-start">54555 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">purchaseFunctionTest(test@123, test@123, Place order, john, india, chennai, 1234567890, june, 2026, Thank you for your pu...)</span>
+                <span class="method-start">56750 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browseClose</span>
+                <span class="method-start">61207 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC007_Logout_FunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserAndLoadingUrl(chrome, https://www.demoblaze.com/)</span>
+                <span class="method-start">63395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutTest(test@123, test@123)</span>
+                <span class="method-start">65422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browseClose</span>
+                <span class="method-start">68906 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC001_SignUpFunctionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeReport</span>
+                <span class="method-start">71188 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
